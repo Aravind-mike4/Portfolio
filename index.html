@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aravind Pallepogu | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#0c0c1d,#1a1a2e);color:#fff;overflow-x:hidden}
+    .gradient-text{background:linear-gradient(90deg,#F72585,#7209B7,#3F37C9,#4CC9F0);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(10px);border-radius:16px;padding:1.5rem;transition:.3s}
+    .card:hover{transform:translateY(-8px);border-color:#F72585;box-shadow:0 15px 30px rgba(247,37,133,.2)}
+    .skill-pill{display:inline-block;background:rgba(79,55,201,.2);color:#4CC9F0;padding:8px 16px;border-radius:50px;margin:5px;font-size:14px;border:1px solid rgba(79,55,201,.5)}
+    .btn-primary{background:linear-gradient(90deg,#F72585,#7209B7);padding:12px 24px;border-radius:50px;font-weight:600;transition:.3s}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 0 20px rgba(247,37,133,.4)}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 py-4 px-6 bg-black bg-opacity-50 backdrop-blur-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold gradient-text">Aravind Pallepogu</div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-pink-400">About</a>
+        <a href="#skills" class="hover:text-pink-400">Skills</a>
+        <a href="#projects" class="hover:text-pink-400">Projects</a>
+        <a href="#experience" class="hover:text-pink-400">Experience</a>
+        <a href="#education" class="hover:text-pink-400">Education</a>
+        <a href="#contact" class="hover:text-pink-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6" id="home">
+    <h1 class="text-6xl font-bold mb-6 gradient-text">Aravind Pallepogu</h1>
+    <p class="text-xl text-gray-300 mb-6">Aspiring Software Engineer | Full Stack & Data Science Developer</p>
+
+    <!-- Resume Button -->
+    <div class="mt-4">
+      <a href="https://drive.google.com/file/d/1w8w4O2f1MtMJkhWDuETnnEBmsHBKptD-/view?usp=drive_link"
+         class="btn-primary inline-block"
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fas fa-download mr-2"></i> Download Resume
+      </a>
+    </div>
+
+    <div class="flex justify-center space-x-6 mt-10">
+      <a href="https://linkedin.com/in/aravind-pallepogu" class="text-2xl text-gray-400 hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Aravind-mike4" class="text-2xl text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+      <a href="mailto:pallepoguaravind3200@gmail.com" class="text-2xl text-gray-400 hover:text-pink-500"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/918186977409" class="text-2xl text-gray-400 hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <!-- Career Objective -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-4 gradient-text">Career Objective</h2>
+      <p class="text-gray-300 max-w-3xl">
+        Seeking an entry-level Software Engineer position that leverages a solid foundation in programming languages, problem-solving, and software development principles. Dedicated to contributing to innovative projects through technical proficiency, adaptability, and collaborative teamwork while continuously growing professionally with a dynamic organization.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-900 bg-opacity-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 gradient-text">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card">
+          <h3 class="text-2xl font-semibold mb-4">Technical Skills</h3>
+          <p class="mb-2 font-semibold text-pink-400">Programming</p>
+          <div><span class="skill-pill">C</span><span class="skill-pill">Java</span><span class="skill-pill">Python</span></div>
+          <p class="mt-4 mb-2 font-semibold text-pink-400">Database</p>
+          <div><span class="skill-pill">SQL</span><span class="skill-pill">MongoDB</span></div>
+          <p class="mt-4 mb-2 font-semibold text-pink-400">Web Technologies</p>
+          <div><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span><span class="skill-pill">JavaScript</span><span class="skill-pill">PHP</span></div>
+          <p class="mt-4 mb-2 font-semibold text-pink-400">Tools</p>
+          <div><span class="skill-pill">VS Code</span><span class="skill-pill">Eclipse</span><span class="skill-pill">Apache Tomcat</span><span class="skill-pill">XAMPP</span><span class="skill-pill">Jupyter Notebook</span></div>
+        </div>
+
+        <div class="card">
+          <h3 class="text-2xl font-semibold mb-4">Activities & Participation</h3>
+          <ul class="list-disc ml-5 text-gray-300 space-y-2">
+            <li>24-Hour Hackathon on MERN Stack at LBRCE</li>
+            <li>AVISHKAR-IDEATHON 2024 at KL University</li>
+            <li>Technical Quiz at LBRCE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 gradient-text">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card">
+          <h3 class="text-xl font-semibold mb-2">Social Media Platform (MERN Stack)</h3>
+          <p class="text-gray-400">Developed a responsive social media platform with authentication, CRUD APIs, and real-time updates.</p>
+          <p class="text-sm mt-2 text-pink-400">Tech Used: React.js, Express.js, Node.js, MongoDB</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold mb-2">Data Science with Python</h3>
+          <p class="text-gray-400">Performed data collection, cleaning, and analysis using Python libraries to generate insights and visualizations.</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold mb-2">Online Quiz Exam System (PHP & MySQL)</h3>
+          <p class="text-gray-400">Web-based quiz platform where students can register, attempt quizzes, and get instant results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-20 bg-gray-900 bg-opacity-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 gradient-text">Internships</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card">
+          <h3 class="text-xl font-semibold">Data Science with Python Intern</h3>
+          <p class="text-pink-400 mb-2">Main Flow Services and Technologies (U.P.) • May–Jul 2025</p>
+          <ul class="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Collected, cleaned and processed large datasets from multiple sources.</li>
+            <li>Conducted EDA to identify patterns and insights using visualization tools.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold">MERN Full-Stack Intern</h3>
+          <p class="text-pink-400 mb-2">Biztron Softech Pvt Ltd (Hyderabad) • Jun–Jul 2024</p>
+          <ul class="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Developed a dynamic social media platform using MERN Stack.</li>
+            <li>Worked on authentication, CRUD APIs, and responsive UI components.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 gradient-text">Education & Certificates</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card">
+          <h3 class="text-xl font-semibold">Bachelor of Technology in CSE</h3>
+          <p class="text-pink-400">Lakireddy Balireddy College of Engineering (2022–2026)</p>
+          <p class="text-gray-400">CGPA: 7.78</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold">Intermediate Education</h3>
+          <p class="text-pink-400">Sri Kakatiya Junior College (2020–2022)</p>
+          <p class="text-gray-400">Percentage: 84%</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold">SSC</h3>
+          <p class="text-pink-400">Z.P. High School Mandepudi (2019–2020)</p>
+          <p class="text-gray-400">Percentage: 96.3%</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold">Certificates</h3>
+          <ul class="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Data Science with Python Internship (Main Flow Services)</li>
+            <li>MERN Full Stack Internship (Biztron Softech)</li>
+            <li>Data Science Workshop – Brainovision Solutions Pvt Ltd</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-900 bg-opacity-50 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 gradient-text">Contact Me</h2>
+      <p class="text-gray-400 mb-8">Feel free to reach out for collaborations or opportunities.</p>
+      <p class="text-xl mb-2"><i class="fas fa-envelope text-pink-400 mr-2"></i>pallepoguaravind3200@gmail.com</p>
+      <p class="text-xl mb-2"><i class="fas fa-phone text-pink-400 mr-2"></i>+91 8186977409</p>
+    </div>
+  </section>
+
+  <footer class="py-6 bg-black bg-opacity-70 text-center text-gray-400">
+    © 2025 Aravind Pallepogu | All Rights Reserved
+  </footer>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.card, .gradient-text').forEach(el=>{
+      gsap.from(el,{scrollTrigger:{trigger:el,start:"top 80%"},y:50,opacity:0,duration:.8})
+    });
+  </script>
+</body>
+</html>
